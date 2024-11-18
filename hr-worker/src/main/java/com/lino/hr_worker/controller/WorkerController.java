@@ -29,6 +29,8 @@ public class WorkerController {
     @GetMapping
     public ResponseEntity<List<Worker>> findAll() {
 
+        logger.info("PORT = "+env.getProperty("local.server.port"));
+
         List<Worker> list = repository.findAll();
 
         return ResponseEntity.ok().body(list);
