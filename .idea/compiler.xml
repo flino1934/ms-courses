@@ -14,7 +14,9 @@
         <module name="hr-user" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="11" />
+    <bytecodeTargetLevel target="11">
+      <module name="hr-users" target="11" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -23,6 +25,7 @@
       <module name="hr-eureka-server" options="-parameters" />
       <module name="hr-payroll" options="-parameters" />
       <module name="hr-user" options="-parameters" />
+      <module name="hr-users" options="-parameters" />
       <module name="hr-worker" options="-parameters" />
     </option>
   </component>
