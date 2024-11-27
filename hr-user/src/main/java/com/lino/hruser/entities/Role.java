@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "tb_Role")
+@Table(name = "tb_role")
 public class Role implements Serializable {
 
     @Id
@@ -16,7 +16,24 @@ public class Role implements Serializable {
     }
 
     public Role(Long id, String roleName) {
+        super();
         this.id = id;
+        this.roleName = roleName;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getRoleName() {
+        return roleName;
+    }
+
+    public void setRoleName(String roleName) {
         this.roleName = roleName;
     }
 }
